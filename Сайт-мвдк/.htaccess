@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Перенаправление с HTTP на HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Установка базового каталога
+RewriteBase /
+
+# Перенаправление всех запросов к index.html
+RewriteRule ^(.*)$ index.html [QSA,L]
