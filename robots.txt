@@ -3,4 +3,4 @@ Disallow: /private/
 Disallow: /admin/
 Disallow: /secret-page.html/
 Allow: /public/
-Sitemap: 
+Sitemap: https://fortune505.github.io/sitemap.xml 
