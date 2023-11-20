@@ -9,3 +9,5 @@ RewriteBase /
 
 # Перенаправление всех запросов к index.html
 RewriteRule ^(.*)$ index.html [QSA,L]
+
+ErrorDocument 404 error404.html
